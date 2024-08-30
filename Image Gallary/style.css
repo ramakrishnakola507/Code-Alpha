@@ -1,0 +1,80 @@
+/* General body styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+/* Container for the gallery */
+.gallery-container {
+    width: 80%;
+    margin: 20px auto;
+}
+
+/* Header styling */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.title {
+    margin: 0;
+    font-size: 28px;
+    font-weight: 400;
+    color: #333;
+}
+
+/* Title span styling */
+span {
+    color: #039BE5;
+}
+
+/* Tab buttons styling */
+.tabs {
+    display: flex;
+    gap: 15px;
+}
+
+.tablinks {
+    background-color: #e0e0e0;
+    border: 1px solid #ccc;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 10px;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Tab button hover effect */
+.tablinks:hover {
+    background-color: #039BE5;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Gallery styling */
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+/* Ensuring all images have the same size */
+.gallery img {
+    width: 30%;
+    margin: 10px 0;
+    border-radius: 10px;
+    /*transition: transform 0.2s ease, box-shadow 0.3s ease, transform 0.5s ease-in-out;*/
+    object-fit: cover;  /* Ensures images maintain aspect ratio */
+    height: 200px;  /* You can adjust this height as per your needs */
+}
+
+/* Adding hover effect with rotation */
+.gallery img:hover {
+    transform: scale(0.8) rotate(-10deg);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    transition: transform 0.5s ease-in-out;
+}
+

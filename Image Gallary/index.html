@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="gallery-container">
+        <div class="header">
+            <h1 class="title">Image <span>Gallery</span></h1>
+            <div class="tabs">
+                <button class="tablinks" onclick="showCategory('all')">All Photos</button>
+                <button class="tablinks" onclick="showCategory('family')">Family Photos</button>
+                <button class="tablinks" onclick="showCategory('child')">Child's Photos</button>
+                <button class="tablinks" onclick="showCategory('places')">Visited Places</button>
+            </div>
+        </div>
+
+        <div class="gallery" id="all">
+            <img src="img/family 1.png" alt="Image 1">
+            <img src="img/family 2.jpeg" alt="Image 2">
+            <img src="img/family 3.jpeg" alt="Image 3">
+            <img src="img/child.jpeg" alt="Image 3">
+            <img src="img/child 1.jpeg" alt="Image 3">
+            <img src="img/child 2.jpeg" alt="Image 3">
+            <img src="img/visited.jpeg" alt="Image 3">
+            <img src="img/visited1.jpeg" alt="Image 3">
+            <img src="img/visited2.jpeg" alt="Image 3">
+            <!-- Add more images here -->
+        </div>
+
+        <div class="gallery" id="family" style="display:none;">
+            <img src="img/family 1.png" alt="Family 1">
+            <img src="img/family 2.jpeg" alt="Family 2">
+            <img src="img/family 3.jpeg" alt="Family 3">
+            <!-- Add more family images here -->
+        </div>
+
+        <div class="gallery" id="child" style="display:none;">
+            <img src="img/child.jpeg" alt="Child 1">
+            <img src="img/child 1.jpeg" alt="Child 2">
+            <img src="img/child 2.jpeg" alt="Child 3">
+            <!-- Add more child images here -->
+        </div>
+
+        <div class="gallery" id="places" style="display:none;">
+            <img src="img/visited.jpeg" alt="Place 1">
+            <img src="img/visited1.jpeg" alt="Place 2">
+            <img src="img/visited2.jpeg" alt="Place 3">
+            <!-- Add more places images here -->
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
